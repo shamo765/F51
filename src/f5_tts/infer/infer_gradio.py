@@ -44,7 +44,7 @@ vocoder = load_vocoder()
 # load models
 F5TTS_model_cfg = dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=512, conv_layers=4)
 F5TTS_ema_model = load_model(
-    DiT, F5TTS_model_cfg, str(cached_path("hf://jpgallegoar/F5-Spanish/model_1200000.safetensors"))
+    DiT, F5TTS_model_cfg, str(cached_path(hf://SPRINGLab/F5-Hindi-24KHz/resolve/main/model_2500000.safetensors"))
 )
 
 chat_model_state = None
